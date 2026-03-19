@@ -1,0 +1,54 @@
+# ---- Python ----
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# ---- LiteX ecosystem (large, restored by scripts/setup.sh) ----
+deps/
+
+# ---- NVDLA RTL (restored by scripts/setup.sh) ----
+nvdla/hw/
+# Keep nvdla/ dir itself (it holds setup notes), just ignore the hw clone
+!nvdla/.gitkeep
+
+# ---- Vivado build output ----
+soc/build/
+.Xil/
+*.jou
+*.log
+*.str
+*.bit
+*.ltx
+*.dcp
+*.rpt
+*.xpr
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.gen/
+
+# ---- Firmware build artifacts ----
+firmware_old/*.o
+firmware_old/*.elf
+firmware_old/*.bin
+firmware_old/*.hex
+firmware_old/*.disasm
+firmware_old/*.map
+firmware_old/bsp/*.o
+firmware_old/nvdla_driver/*.o
+
+# ---- Old/unused firmware folder ----
+firmware/
+
+# ---- Minicom captures & scratch ----
+minicom_read.txt
+patch_regs.py
+vivado_*.backup.*
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
