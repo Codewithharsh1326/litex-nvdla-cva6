@@ -1,4 +1,6 @@
 #!/bin/bash
+# Exit immediately if a command exits with a non-zero status
+set -e
 # upload_firmware.sh — Upload firmware to ZCU104 via LiteX BIOS serial boot
 #
 # WORKFLOW:
