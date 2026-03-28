@@ -1,4 +1,6 @@
 #!/bin/bash
+# Exit immediately if a command exits with a non-zero status
+set -e
 # Script to program ZCU104 FPGA with the generated bitstream
 # Make sure Vivado is in the PATH
 
