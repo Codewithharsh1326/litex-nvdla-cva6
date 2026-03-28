@@ -1,4 +1,5 @@
 # Makefile — Bare-metal NVDLA firmware for ZCU104 CVA6 RV64IMAC
+.PHONY: all serial clean
 #
 # Targets:
 #   make            → firmware.bin  (ROM bake-in, linked at 0x10000000)
