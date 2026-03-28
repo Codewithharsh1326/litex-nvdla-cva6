@@ -1,4 +1,6 @@
 #!/bin/bash
+# Exit immediately if a command exits with a non-zero status
+set -e
 # ============================================================================
 # Environment Setup Script for LiteX CVA6 RISC-V Project
 # Source this file:  source scripts/setup_env.sh
