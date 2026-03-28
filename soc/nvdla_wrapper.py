@@ -29,7 +29,7 @@ class NVDLASmall(LiteXModule):
         (e.g., nvdla/hw/outdir/nv_small/vmod).
     """
 
-    def __init__(self, platform, nvdla_rtl_dir):
+    def __init__(self, platform, nvdla_rtl_dir) -> None:
         # =====================================================================
         # Interfaces exposed to LiteX SoC
         # =====================================================================
@@ -205,7 +205,7 @@ class NVDLASmall(LiteXModule):
         self._add_rtl_sources(platform, nvdla_rtl_dir)
 
     @staticmethod
-    def _add_rtl_sources(platform, rtl_dir):
+    def _add_rtl_sources(platform, rtl_dir) -> None:
         """Add all NVDLA Verilog sources and include paths."""
         # Include directories
         include_dir = os.path.join(rtl_dir, "include")
