@@ -1,4 +1,8 @@
 # NVDLA + CVA6 RISC-V SoC on ZCU104
+![RISC-V](https://img.shields.io/badge/Architecture-RISC--V_64--bit-blue.svg)
+![Xilinx](https://img.shields.io/badge/FPGA-Xilinx_ZCU104-red.svg)
+![C](https://img.shields.io/badge/Firmware-Bare--Metal_C-purple.svg)
+![Python](https://img.shields.io/badge/Gateware-LiteX_Python-yellow.svg)
 
 > A fully custom **CVA6 (Ariane) RISC-V 64-bit SoC** integrated with **NVIDIA's NVDLA (nv_small)** deep learning accelerator, synthesized on a Xilinx ZCU104 FPGA using the [LiteX](https://github.com/enjoy-digital/litex) framework. Runs an MNIST inference pipeline — conv1/pool1 in SW on the CPU, conv2/pool2 on NVDLA hardware, FC in SW.
 
